@@ -1,0 +1,15 @@
+COPY (SELECT * FROM actor) TO 'C:\\files\\actor.csv' WITH CSV HEADER;
+COPY (SELECT * FROM address) TO 'C:\\files\\address.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM category) TO 'C:\\files\\category.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM city) TO 'C:\\files\\city.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM country) TO 'C:\\files\\country.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM customer) TO 'C:\\files\\customer.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM film) TO 'C:\\files\\film.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM film_actor) TO 'C:\\files\\film_actor.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM film_category) TO 'C:\\files\\film_category.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM inventory) TO 'C:\\files\\inventory.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM language) TO 'C:\\files\\language.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM payment) TO 'C:\\files\\payment.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM rental) TO 'C:\\files\\rental.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM staff) TO 'C:\\files\\staff.csv' WITH (FORMAT csv, HEADER);
+COPY (SELECT * FROM store) TO 'C:\\files\\store.csv' WITH (FORMAT csv, HEADER);
